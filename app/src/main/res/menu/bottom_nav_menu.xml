@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/navigation_msgs"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Посты"/>
+
+    <item
+            android:id="@+id/navigation_items"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="Товары"/>
+
+    <item
+            android:id="@+id/navigation_social"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="Соц.сети"/>
+
+    <item
+            android:id="@+id/navigation_profile"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="Профиль"/>
+
+</menu>

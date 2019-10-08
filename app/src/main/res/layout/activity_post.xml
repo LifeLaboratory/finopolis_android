@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".SignInActivity"
+        android:background="@color/colorPrimary">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/tmp"
+                android:id="@+id/item_img"
+                android:scaleType="centerCrop"/>
+
+        <EditText
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:hint="Заголовок"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_title" />
+
+        <EditText
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:lines="3"
+                android:gravity="bottom"
+                android:hint="Описание"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_description" />
+
+        <EditText
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:hint="Дата публикации"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_data" />
+
+        <EditText
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:hint="Ссылка на фото"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_photo" />
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Выбрать товар"
+                android:background="#ff8c00"
+                android:textColor="#fff"
+                android:id="@+id/btn_add_item"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_add_post"
+            app:backgroundTint="#ff8c00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="76dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/save" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:padding="0dp"
+            android:layout_alignParentBottom="true">
+
+        <ImageButton
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/list"
+                android:text="Посты"
+                android:textSize="14sp"
+                android:id="@+id/btn_to_posts"
+                android:background="@drawable/fon_menu"
+                android:textColor="#fff" />
+
+        <ImageButton
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Товары"
+                android:src="@drawable/box"
+                android:textSize="14sp"
+                android:id="@+id/btn_to_items"
+                android:background="@drawable/fon_menu"
+                android:textColor="#fff" />
+
+        <ImageButton
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Статистика"
+                android:src="@drawable/social"
+                android:textSize="14sp"
+                android:background="@drawable/fon_menu"
+                android:id="@+id/btn_to_social"
+                android:textColor="#fff" />
+
+        <ImageButton
+                android:src="@drawable/profile"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Профиль"
+                android:background="@drawable/fon_menu"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:id="@+id/btn_to_profile" />
+
+    </LinearLayout>
+
+</RelativeLayout>
